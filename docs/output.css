@@ -931,6 +931,12 @@ div .button-footer {
   width: 20px;
 }
 
+.img-vehicles {
+  width: 90%;
+  height: 90%;
+  object-fit: scale-down;
+}
+
 @media (min-width: 640px) {
   .justify-between {
     justify-content: space-between;
