@@ -7,6 +7,9 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+.mobile-header {
+  width: 90%;
+}
 *,
 ::before,
 ::after {
@@ -412,6 +415,9 @@ object {
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
+.video {
+  width: 80%;
+}
 *,
 ::before,
 ::after {
@@ -599,6 +605,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .inline-flex {
@@ -938,6 +945,23 @@ div .button-footer {
 }
 
 @media (min-width: 640px) {
+  .mobile-header {
+    width: 100%;
+  }
+  #parts {
+    padding: 5;
+    margin: 0;
+  }
+  #vehicles {
+    padding: 5;
+    margin: 0;
+  }
+
+  #community {
+    padding: 5;
+    margin: 0;
+  }
+
   .justify-between {
     justify-content: space-between;
   }
@@ -1049,6 +1073,11 @@ div .button-footer {
 
   .menu-hamburger {
     display: none;
+  }
+
+  .icon-car {
+    width: 30px;
+    height: 30px;
   }
 }
 @media (min-width: 1024px) {
